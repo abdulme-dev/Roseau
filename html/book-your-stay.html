@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Stay | Roseau Hotel &amp; Spa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#b22b1d",
+                    "on-background": "#1b1c1c",
+                    "background": "#fbf9f8",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d0c5af",
+                    "surface-tint": "#735c00",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-high": "#eae8e7",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffdad4",
+                    "on-secondary-fixed-variant": "#8f0f07",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-container": "#444543",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "outline": "#7f7663",
+                    "tertiary-fixed-dim": "#c7c6c4",
+                    "tertiary": "#5e5f5d",
+                    "surface-variant": "#e4e2e1",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "on-tertiary-fixed": "#1a1c1a",
+                    "on-tertiary-fixed-variant": "#464745",
+                    "on-primary": "#ffffff",
+                    "primary": "#735c00",
+                    "secondary-container": "#fe624e",
+                    "surface-bright": "#fbf9f8",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-fixed": "#e3e2e0",
+                    "on-secondary-container": "#650000",
+                    "on-primary-container": "#554300",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#4d4635",
+                    "tertiary-container": "#b3b3b0",
+                    "on-secondary-fixed": "#410000",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-padding-lg": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/book.css"/>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface/90 backdrop-blur-md border-b border-primary/20 shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html" class="font-display-lg text-headline-md text-primary">Roseau</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+</nav>
+<a href="book-your-stay.html" class="bg-primary-container text-on-primary px-6 py-3 font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95">Book Your Stay</a>
+</div>
+</header>
+<main class="pt-32 pb-section-padding-lg px-gutter max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Booking Flow Canvas -->
+<div class="flex-1">
+<!-- Stepper -->
+<div class="flex items-center justify-between mb-12 overflow-x-auto pb-4 custom-scrollbar">
+<div class="flex items-center gap-3 whitespace-nowrap step-active pb-2">
+<span class="w-8 h-8 rounded-full border border-primary-container flex items-center justify-center font-bold">1</span>
+<span class="font-label-caps text-label-caps">Dates &amp; Guests</span>
+</div>
+<div class="h-px bg-outline-variant flex-1 mx-4 min-w-[20px]"></div>
+<div class="flex items-center gap-3 whitespace-nowrap step-inactive">
+<span class="w-8 h-8 rounded-full border border-outline flex items-center justify-center">2</span>
+<span class="font-label-caps text-label-caps">Rooms</span>
+</div>
+<div class="h-px bg-outline-variant flex-1 mx-4 min-w-[20px]"></div>
+<div class="flex items-center gap-3 whitespace-nowrap step-inactive">
+<span class="w-8 h-8 rounded-full border border-outline flex items-center justify-center">3</span>
+<span class="font-label-caps text-label-caps">Details</span>
+</div>
+<div class="h-px bg-outline-variant flex-1 mx-4 min-w-[20px]"></div>
+<div class="flex items-center gap-3 whitespace-nowrap step-inactive">
+<span class="w-8 h-8 rounded-full border border-outline flex items-center justify-center">4</span>
+<span class="font-label-caps text-label-caps">Payment</span>
+</div>
+</div>
+<!-- Active Section (Step 1 & 2 combined for efficiency in this UI demo) -->
+<section class="space-y-16" id="booking-form-canvas">
+<!-- Date & Guest Selection -->
+<div class="grid md:grid-cols-3 gap-8">
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">Check-in</label>
+<input class="w-full input-underline font-body-md" type="date" value="2024-11-20"/>
+</div>
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">Check-out</label>
+<input class="w-full input-underline font-body-md" type="date" value="2024-11-25"/>
+</div>
+<div class="relative">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-1">Guests</label>
+<select class="w-full input-underline font-body-md appearance-none">
+<option>2 Adults, 0 Children</option>
+<option>1 Adult</option>
+<option>2 Adults, 1 Child</option>
+<option>2 Adults, 2 Children</option>
+</select>
+</div>
+</div>
+<!-- Room Selection Bento -->
+<div>
+<h2 class="font-headline-sm text-headline-sm mb-6">Select Your Sanctuary</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Room Card 1 -->
+<div class="group relative bg-surface-container-lowest overflow-hidden shadow-[0_30px_30px_rgba(51,51,51,0.04)] border border-transparent hover:border-primary-container transition-all cursor-pointer">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A luxurious and minimalist hotel room with high-end Ethiopian architectural influences. Large windows overlook the historic city of Gondar under a soft sunset. The room features a king-sized bed with crisp white linens, dark wood furniture, and subtle gold accents. The atmosphere is serene, exclusive, and peaceful with soft ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW38ztznpaFos-HdPN4B8ounS_6Kc0mdHbsLcwkU17Qq8igXw2yukQG8nCPh11P-XvOKGnLMBqIkrkzU2tiZTzLtDOtk5mgI0YrvpfQsi451gdGKNOCwVvqn-jTuoPBW2r4b0IBTv1VqyLA4ruwTlhX4DvX5ZO1f6c6OQGd7u_1DQZDVI7tswNd2J6x_gl4Yhwk7nsD3RIPrKMBuLiCY97J2lUBe2itRCXpsUaxSewgYaAGSCxrkqvgMtx9bXIbD3MzxyKaynT7ym8"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm">Gondar Executive Suite</h3>
+<span class="font-label-caps text-label-caps text-primary">$450 / night</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">45sqm â€¢ City View â€¢ King Bed â€¢ Spa Access</p>
+<button class="w-full border border-primary-container py-3 font-label-caps text-label-caps text-primary hover:bg-primary-container hover:text-on-primary transition-all">Select Room</button>
+</div>
+</div>
+<!-- Room Card 2 -->
+<div class="group relative bg-surface-container-lowest overflow-hidden shadow-[0_30px_30px_rgba(51,51,51,0.04)] border border-primary-container transition-all cursor-pointer ring-1 ring-primary-container">
+<div class="absolute top-4 right-4 bg-primary-container text-on-primary px-3 py-1 font-label-caps text-[10px] z-10">SELECTED</div>
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A spacious and elegant suite in a luxury African hotel, featuring hand-crafted stone walls and artisanal decor. A deep soaking tub sits near a large terrace window with views of the Ethiopian highlands. The design is minimalist-luxury with warm earth tones, gold hardware, and high-key lighting for a tranquil retreat vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz2hU31KHoUgX9wvjduJT2lHibxtSa4mGg1Dmb1HT3mJ_706yu4Lil8nWckezjY4dOziCSvzBPi4xd6OqFxzr25btQ9bP-vkOvAHEnF70alrwovwLMAQ0mQNVRgG0GC7dpRSPqMKeQFgj8VI2MUsHFukP4Qt74JJ72mqe748UwWnBerErhHM_el59Ps4AhDAJxDNaewfOnp_CjiQJ5VdU-ZZu2gFauMN118lxGfNovQOj1JGDkXiOj7N-VcxO6qi8_iEYTnrinrVjG"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm">Heritage King Room</h3>
+<span class="font-label-caps text-label-caps text-primary">$320 / night</span>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">38sqm â€¢ Garden View â€¢ King Bed â€¢ Private Balcony</p>
+<button class="w-full bg-primary-container text-on-primary py-3 font-label-caps text-label-caps">Stay Selected</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Guest Details & Payment -->
+<div class="space-y-12 bg-white/40 p-8 border border-outline-variant/30 backdrop-blur-sm">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<h3 class="font-headline-sm text-headline-sm border-b border-primary-container/20 pb-2">Guest Identity</h3>
+<div class="space-y-4">
+<input class="w-full input-underline" placeholder="Full Name" type="text"/>
+<input class="w-full input-underline" placeholder="Email Address" type="email"/>
+<input class="w-full input-underline" placeholder="Phone Number" type="tel"/>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline-sm text-headline-sm border-b border-primary-container/20 pb-2">Payment Details</h3>
+<div class="space-y-4">
+<div class="flex gap-4 mb-2">
+<img alt="Visa" class="h-6 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxPkqSw_QnXLyfQOzb-BDbOSRdDUKc2I8zeTij419u98xIS6XeMGFyXW0hYaD-njMQY-EuFg2CAU9bKrxMTX5_FscabGOsVTW-RTsUA-XHKzmcylL1U4NYgyocf_Qq-3EYorTTPZnOZDZzoIGVae50rJKkFm7puvPR7jwN8gIXPorYJCwhx5cf_gUESlIosUy7s2Pjg8_PyqJADx_kYeZeTjZ6o0NAfYKBrdxnVCJBa8z0xripZw58ctrVcSzQN42gTcw5n1Fu4YY5"/>
+<img alt="Mastercard" class="h-6 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCorLcgY7DzLIw5JbxkM6psZRFpvPZrClBVT1_Md9VW0l5HK2DC5aj6KrgqM2mjh37wQHOMk7u0C-2m5tph9zRE-CnWbpefJf03prS_SGBUw1nGjTNw7Tb7MmTND0ywnjTINDHJf86aZOny1E5lDJLPjvDWp9gN9vCvd5W3o9izn3gY2fklyt5zImspHyiZ0Tg-SRNw1TelL5SpvBz32g9_5ogDDfv6LY5xL5YxXPrxllomvXg3YIWa1fTL3mxC_MuaW2dSilF3VCEy"/>
+<span class="font-label-caps text-[10px] text-outline flex items-center">LOCAL METHODS</span>
+</div>
+<input class="w-full input-underline" placeholder="Card Number" type="text"/>
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full input-underline" placeholder="MM/YY" type="text"/>
+<input class="w-full input-underline" placeholder="CVC" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<div class="flex items-center gap-4 mb-6">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" id="terms" type="checkbox"/>
+<label class="text-sm text-on-surface-variant" for="terms">I agree to the <a class="underline" href="#">Terms of Service</a> and <a class="underline" href="#">Cancellation Policy</a>.</label>
+</div>
+<button class="w-full md:w-auto bg-primary-container text-on-primary px-12 py-4 font-label-caps text-label-caps shadow-lg hover:brightness-110 transition-all flex items-center justify-center gap-3">
+                                Confirm &amp; Pay $1,760.00
+                                <span class="material-symbols-outlined text-sm">lock</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Summary Sidebar -->
+<aside class="w-full lg:w-96">
+<div class="sticky top-32 space-y-6">
+<div class="bg-surface-container-lowest p-8 border border-outline-variant/20 shadow-[0_30px_30px_rgba(51,51,51,0.04)]">
+<h2 class="font-headline-sm text-headline-sm mb-6 pb-4 border-b border-primary-container/30">Your Itinerary</h2>
+<div class="space-y-6">
+<!-- Dates Section -->
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant">DATES</p>
+<p class="font-body-md font-semibold text-sm">Nov 20 â€” Nov 25, 2024</p>
+<p class="text-xs text-outline italic">5 Nights</p>
+</div>
+</div>
+<!-- Room Section -->
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">king_bed</span>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant">ACCOMMODATION</p>
+<p class="font-body-md font-semibold text-sm">Heritage King Room</p>
+<p class="text-xs text-outline">Garden View, Breakfast Included</p>
+</div>
+</div>
+<!-- Guests Section -->
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">groups</span>
+<div>
+<p class="font-label-caps text-[10px] text-on-surface-variant">GUESTS</p>
+<p class="font-body-md font-semibold text-sm">2 Adults</p>
+</div>
+</div>
+<hr class="border-outline-variant/30"/>
+<!-- Promo Section -->
+<div class="relative">
+<input class="w-full input-underline text-sm uppercase" placeholder="Promo Code" type="text"/>
+<button class="absolute right-0 bottom-2 font-label-caps text-[10px] text-primary font-bold">APPLY</button>
+</div>
+<!-- Price Calculation -->
+<div class="space-y-2 pt-2">
+<div class="flex justify-between text-sm text-on-surface-variant">
+<span>$320 x 5 Nights</span>
+<span>$1,600.00</span>
+</div>
+<div class="flex justify-between text-sm text-on-surface-variant">
+<span>Service Charge &amp; Tax (10%)</span>
+<span>$160.00</span>
+</div>
+<div class="flex justify-between font-bold text-lg pt-4 border-t border-outline-variant/30">
+<span class="font-headline-sm">Total</span>
+<span class="text-primary">$1,760.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Badge -->
+<div class="flex items-center justify-center gap-2 text-outline py-4">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span class="font-label-caps text-[10px]">Secure 256-bit SSL encrypted booking</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-secondary border-t border-primary/30 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto">
+<div class="mb-8 md:mb-0">
+<h2 class="font-display-lg text-headline-sm text-on-secondary mb-4">Roseau</h2>
+<p class="font-body-md text-body-md text-on-secondary/80 max-w-xs leading-relaxed">
+                    Â© 2024 Roseau Hotel &amp; Spa. Gondar, Ethiopia. 
+                    Redefining luxury in the Heart of History.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-6">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-on-secondary mb-2 opacity-60">Legal</span>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-on-secondary mb-2 opacity-60">Media</span>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="#">Press Kit</a>
+<a class="font-body-md text-body-md text-primary-fixed hover:text-on-secondary transition-colors" href="admin-dashboard.html">Admin</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="contact-us.html">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Micro-interaction for room selection
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove selected states from all cards
+                document.querySelectorAll('.group').forEach(c => {
+                    c.classList.remove('ring-1', 'ring-primary-container', 'border-primary-container');
+                    const badge = c.querySelector('.z-10');
+                    if(badge) badge.remove();
+                    const btn = c.querySelector('button');
+                    btn.classList.remove('bg-primary-container', 'text-on-primary');
+                    btn.classList.add('border', 'border-primary-container', 'text-primary');
+                    btn.textContent = 'Select Room';
+                });
+                
+                // Add selected state to clicked card
+                this.classList.add('ring-1', 'ring-primary-container', 'border-primary-container');
+                const badge = document.createElement('div');
+                badge.className = 'absolute top-4 right-4 bg-primary-container text-on-primary px-3 py-1 font-label-caps text-[10px] z-10';
+                badge.textContent = 'SELECTED';
+                this.appendChild(badge);
+                const btn = this.querySelector('button');
+                btn.classList.add('bg-primary-container', 'text-on-primary');
+                btn.classList.remove('border', 'border-primary-container', 'text-primary');
+                btn.textContent = 'Stay Selected';
+            });
+        });
+
+        // Floating label interaction
+        const inputs = document.querySelectorAll('.input-underline');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling?.classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.previousElementSibling?.classList.remove('text-primary');
+            });
+        });
+    </script>
+</body></html>

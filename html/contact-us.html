@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Roseau Hotel & Spa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-error": "#ffffff",
+                "surface-container": "#f0eded",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "primary-container": "#d4af37",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#e9c349",
+                "secondary": "#b22b1d",
+                "on-background": "#1b1c1c",
+                "background": "#fbf9f8",
+                "on-tertiary": "#ffffff",
+                "outline-variant": "#d0c5af",
+                "surface-tint": "#735c00",
+                "surface-container-low": "#f6f3f2",
+                "surface-container-high": "#eae8e7",
+                "on-error-container": "#93000a",
+                "secondary-fixed": "#ffdad4",
+                "on-secondary-fixed-variant": "#8f0f07",
+                "surface": "#fbf9f8",
+                "primary-fixed-dim": "#e9c349",
+                "on-tertiary-container": "#444543",
+                "surface-container-lowest": "#ffffff",
+                "inverse-on-surface": "#f3f0f0",
+                "outline": "#7f7663",
+                "tertiary-fixed-dim": "#c7c6c4",
+                "tertiary": "#5e5f5d",
+                "surface-variant": "#e4e2e1",
+                "secondary-fixed-dim": "#ffb4a8",
+                "on-tertiary-fixed": "#1a1c1a",
+                "on-tertiary-fixed-variant": "#464745",
+                "on-primary": "#ffffff",
+                "primary": "#735c00",
+                "secondary-container": "#fe624e",
+                "surface-bright": "#fbf9f8",
+                "on-surface": "#1b1c1c",
+                "surface-dim": "#dcd9d9",
+                "on-primary-fixed": "#241a00",
+                "on-primary-fixed-variant": "#574500",
+                "tertiary-fixed": "#e3e2e0",
+                "on-secondary-container": "#650000",
+                "on-primary-container": "#554300",
+                "inverse-surface": "#303030",
+                "surface-container-highest": "#e4e2e1",
+                "on-surface-variant": "#4d4635",
+                "tertiary-container": "#b3b3b0",
+                "on-secondary-fixed": "#410000",
+                "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "32px",
+                "container-max": "1280px",
+                "margin-mobile": "20px",
+                "unit": "8px",
+                "section-padding-lg": "120px"
+            },
+            "fontFamily": {
+                "headline-sm": ["Playfair Display"],
+                "display-lg": ["Playfair Display"],
+                "headline-md": ["Playfair Display"],
+                "display-lg-mobile": ["Playfair Display"],
+                "label-caps": ["Montserrat"],
+                "body-lg": ["Montserrat"],
+                "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/contact.css"/>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md dark:bg-surface-container-highest/90 border-b border-primary/20 dark:border-primary-container/20 shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html"><div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim">Roseau</div></a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="contact-us.html">Contact</a>
+<a href="book-your-stay.html" class="ml-4 bg-primary-container text-on-primary-container px-6 py-2 font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95">Book Your Stay</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[409px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="A cinematic, wide-angle photograph of the historic stone castles in Gondar, Ethiopia, captured at the golden hour. The soft, warm amber sunlight highlights the ancient textures of the volcanic rock masonry. The atmosphere is peaceful and regal, reflecting a luxury heritage aesthetic with deep shadows and high-end photographic clarity. The scene evokes a sense of timeless Ethiopian grandeur and hospitality." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTnwX-P5Gr1NzZSMg8MUOPpTmTRx6I8-TtRvbPQoSF0C4vWCBn93uuJH3r9SSrl5GEYKDp1INMufshnwTuZbiQUY2EwXqamEMONOIgdoD4QZ1wo6j2rIyxEwad7XwWnAxChFyhY65PNbUskwEYAu7tjeWHNOiOI5sLd-XwbdjnqMPuyf_vXfx1BzFoOmqwTyMWllVUsw65szdesK0Nf63pTEAxyvTM0BMUCKGcw_XEGCMY0ayFVOGakXjrECLh_iIMs7RT9_4tqLVr')">
+</div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center px-gutter">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-4">Get in Touch</h1>
+<div class="h-px w-24 bg-primary-container mx-auto"></div>
+</div>
+</section>
+<!-- Contact Content Section -->
+<section class="max-w-container-max mx-auto px-gutter py-section-padding-lg">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<!-- Left Column: Contact Information -->
+<div class="space-y-12">
+<div>
+<h2 class="font-headline-md text-headline-md mb-6">Concierge & Inquiries</h2>
+<p class="text-on-surface-variant font-body-lg mb-8 leading-relaxed">
+                            Whether you are planning a royal retreat or seeking wellness in the heart of history, our team is dedicated to ensuring your experience at Roseau is flawless.
+                        </p>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center border border-primary-container/30 rounded-full text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">Our Location</h4>
+<p class="font-body-md text-on-surface">A3 Road, Gondar, Ethiopia</p>
+<p class="text-on-surface-variant text-sm italic mt-1">Near the historic Fasil Ghebbi complex</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center border border-primary-container/30 rounded-full text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">Direct Dial</h4>
+<p class="font-body-md text-on-surface">091 900 9944</p>
+<p class="text-on-surface-variant text-sm mt-1">Available 24/7 for guest assistance</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center border border-primary-container/30 rounded-full text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">Email Correspondence</h4>
+<p class="font-body-md text-on-surface">concierge@roseaugondar.com</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center border border-primary-container/30 rounded-full text-primary-container group-hover:bg-primary-container group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary mb-1">Instant Message</h4>
+<p class="font-body-md text-on-surface flex items-center gap-2">
+                                    WhatsApp: +251 91 900 9944
+                                </p>
+</div>
+</div>
+</div>
+<!-- Atmospheric Detail -->
+<div class="pt-8 border-t border-primary/10">
+<div class="flex gap-4">
+<a class="text-primary-container hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">public</span></a>
+<a class="text-primary-container hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">photo_camera</span></a>
+<a class="text-primary-container hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">movie</span></a>
+</div>
+</div>
+</div>
+<!-- Right Column: Professional Inquiry Form -->
+<div class="bg-surface-container-low p-10 md:p-16 premium-shadow relative overflow-hidden">
+<!-- Subtle Gold Accent -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/5 rounded-bl-full"></div>
+<h3 class="font-headline-sm text-headline-sm mb-10 text-center">Inquiry Registry</h3>
+<form class="space-y-10">
+<div class="relative group">
+<label class="block font-label-caps text-label-caps text-primary mb-1">Full Name</label>
+<input class="w-full form-input-underline placeholder:text-outline-variant" placeholder="H.E. Yohannes Gebre" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label-caps text-label-caps text-primary mb-1">Email Address</label>
+<input class="w-full form-input-underline placeholder:text-outline-variant" placeholder="guest@example.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="block font-label-caps text-label-caps text-primary mb-1">Subject of Interest</label>
+<select class="w-full form-input-underline text-on-surface cursor-pointer">
+<option>Room Reservation</option>
+<option>Spa & Wellness Packages</option>
+<option>Corporate Events</option>
+<option>Dining Reservations</option>
+<option>General Inquiry</option>
+</select>
+</div>
+<div class="relative group">
+<label class="block font-label-caps text-label-caps text-primary mb-1">Your Message</label>
+<textarea class="w-full form-input-underline resize-none placeholder:text-outline-variant" placeholder="How may we serve you?" rows="4"></textarea>
+</div>
+<div class="pt-6">
+<button class="w-full bg-primary-container text-on-primary-container py-5 font-label-caps text-label-caps tracking-widest hover:bg-primary transition-all duration-300 shadow-md hover:shadow-xl active:scale-[0.98]" type="submit">
+                                TRANSMIT INQUIRY
+                            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[500px] bg-surface-container-high relative">
+<div class="absolute inset-0 bg-cover bg-center grayscale contrast-75 brightness-90 hover:grayscale-0 transition-all duration-700 cursor-crosshair" data-location="Gondar, Ethiopia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlRdv-Wy70YR33zlRq2sgZU4rtrJey7IFoIjigJostEosvUvOZRtGuhq9XduqBqpFVFm0lUQ7GhQmX9F_HGzaNlcS04scyxZyNzeRw7fgK85h1ndVFXLYCRMxuM-GG29U6PBE42fT0g9HTtI-kEQwhhvz2fCmqT9uBJr2T1zWwuGabyONqCqe0jTdP8w0b3hEWyVXvKxtgzJ9xw-ZWxYldGREH2nuWd4l8tHUsjATEfxYoeW0i7mCRyJZPcCfCRVxPihZpzvF3LZEi')">
+</div>
+<!-- Custom Map Marker Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+<div class="relative flex items-center justify-center">
+<div class="absolute w-24 h-24 bg-primary-container/20 rounded-full animate-ping"></div>
+<div class="absolute w-12 h-12 bg-primary-container/40 rounded-full"></div>
+<div class="relative z-10 bg-white p-3 rounded-full shadow-2xl border-2 border-primary-container">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">hotel</span>
+</div>
+</div>
+</div>
+<!-- Floating Map Info -->
+<div class="absolute bottom-8 right-8 bg-white/90 backdrop-blur px-8 py-6 shadow-2xl border border-primary-container/20 max-w-xs hidden md:block">
+<h5 class="font-headline-sm text-[18px] mb-2 text-primary">Explore Gondar</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Centrally located within reach of the Royal Enclosure and 15 minutes from the airport. Valet parking is complimentary for guests.
+                </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary dark:bg-on-secondary-fixed-variant border-t border-primary/30 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="font-display-lg text-headline-sm text-on-secondary mb-6">Roseau</div>
+<p class="font-body-md text-on-secondary/70 max-w-sm mb-8">
+                    A destination where the imperial heritage of Gondar meets the pinnacle of modern luxury and serene Ethiopian hospitality.
+                </p>
+<div class="text-on-secondary/60 text-sm">
+                    Â© 2024 Roseau Hotel & Spa. Gondar, Ethiopia.
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-primary-fixed font-bold mb-2">Legal</h5>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Press Kit</a>
+<a class="font-body-md text-primary-fixed hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="admin-dashboard.html">Admin</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-primary-fixed font-bold mb-2">Follow</h5>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Instagram</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Facebook</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for form focus
+        const inputs = document.querySelectorAll('.form-input-underline');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.replace('text-primary', 'text-primary-container');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').classList.replace('text-primary-container', 'text-primary');
+            });
+        });
+
+        // Form submission animation simulation
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'REGISTRY SUBMITTED...';
+            btn.classList.add('bg-primary');
+            
+            setTimeout(() => {
+                btn.textContent = 'THANK YOU';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                    btn.classList.remove('bg-primary');
+                    e.target.reset();
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+</body></html>

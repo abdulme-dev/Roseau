@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Roseau Hotel & Spa | Dining</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#b22b1d",
+                    "on-background": "#1b1c1c",
+                    "background": "#fbf9f8",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d0c5af",
+                    "surface-tint": "#735c00",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-high": "#eae8e7",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffdad4",
+                    "on-secondary-fixed-variant": "#8f0f07",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-container": "#444543",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "outline": "#7f7663",
+                    "tertiary-fixed-dim": "#c7c6c4",
+                    "tertiary": "#5e5f5d",
+                    "surface-variant": "#e4e2e1",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "on-tertiary-fixed": "#1a1c1a",
+                    "on-tertiary-fixed-variant": "#464745",
+                    "on-primary": "#ffffff",
+                    "primary": "#735c00",
+                    "secondary-container": "#fe624e",
+                    "surface-bright": "#fbf9f8",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-fixed": "#e3e2e0",
+                    "on-secondary-container": "#650000",
+                    "on-primary-container": "#554300",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#4d4635",
+                    "tertiary-container": "#b3b3b0",
+                    "on-secondary-fixed": "#410000",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-padding-lg": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/dining.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="bg-surface/90 backdrop-blur-md dark:bg-surface-container-highest/90 border-b border-primary/20 dark:border-primary-container/20 shadow-sm docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html" class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim">Roseau</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+</div>
+<a href="book-your-stay.html" class="bg-primary-container text-white px-6 py-2 font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95">
+                Book Your Stay
+            </a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-1000 hover:scale-105" data-alt="A luxurious close-up of a gourmet Ethiopian dish featuring colorful Doro Wat and Kitfo served on a traditional circular woven basket known as a Mesob. The lighting is warm and dramatic, highlighting the rich textures and deep reds of the spices. The background is a blurred, high-end restaurant setting with gold accents and soft candlelight, creating a refined and appetizing atmosphere for a premium dining experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtpI5OcXDE3_QRwrFQztEfhrFslkP6-wgAgq8HRKfGA7c3ELhqP6cG69snOqaXuvEc2UsFooGO_Vjx0OP_VjwvBzukKfrILsHkzK97ZOEz3I3F3-RihHK2C5gr3g6IsUkre1Wb2zsSTXf5N5IieEi8pfNgI4ceMulJuPRw8JyZjDkmIWalbn-LYmgs4-vTeyLpBE5hMYhawMnLlLV-QiPK0HEvFw4TX8TcF5kkfjg88Y2QrJLNBBOjky8XGtlGE1EjZ6YDVXqKokG6')">
+</div>
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-display-lg text-6xl md:text-8xl text-white mb-6">Culinary Excellence at Roseau</h1>
+<p class="font-body-lg text-white/90 max-w-2xl mx-auto mb-10">Ethiopian, African, American, Chinese, Indian, Turkish, and International cuisines — plus Pizza, Seafood, and Grill &amp; BBQ. Vegetarian and vegan options always available.</p>
+<div class="w-24 h-[1px] bg-primary-container mx-auto"></div>
+</div>
+</section>
+<!-- Reservation Anchor -->
+<div class="max-w-container-max mx-auto px-gutter -mt-16 relative z-20" id="reserve">
+<div class="bg-surface shadow-soft p-10 border-t-2 border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-end">
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-primary mb-2">Guests</label>
+<input class="registry-input font-body-md text-on-surface" placeholder="2 People" type="number"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-primary mb-2">Date</label>
+<input class="registry-input font-body-md text-on-surface" type="date"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-caps text-label-caps text-primary mb-2">Time</label>
+<input class="registry-input font-body-md text-on-surface" type="time"/>
+</div>
+<button class="bg-secondary text-white py-4 font-label-caps text-label-caps hover:opacity-90 transition-opacity">
+                    Reserve a Table
+                </button>
+</div>
+</div>
+</div>
+<!-- Dining Philosophy (Intro) -->
+<section class="py-section-padding-lg px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<span class="font-label-caps text-label-caps text-secondary">The Royal Feast</span>
+<h2 class="font-headline-md text-headline-md text-on-background">A World of Flavours</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">Our restaurant serves a rich variety of cuisines — Ethiopian, African, American, Chinese, Indian, Turkish, and International — plus Pizza, Seafood, and Grill &amp; BBQ. We offer vegetarian and vegan options, with meals available for Breakfast, Brunch, Lunch, Dinner, High Tea, and Cocktail Hour.</p>
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="font-label-caps text-label-caps text-primary group-hover:mr-2 transition-all">Meet our Executive Chef</span>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] bg-cover bg-center shadow-soft" data-alt="A portrait of a professional chef in a clean white uniform meticulously plating a dish with precision tweezers in a high-end, modern kitchen. The background features polished stainless steel surfaces and warm ambient lighting. The atmosphere is one of intense focus and artistic dedication, reflecting the premium culinary standards of a luxury hotel restaurant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmMh1OsXm-3j-pLCKfOBZYMYZWK7TaMoO6TuxWvOmzbT7JGqHaL8iA8dC-yo8OPyUZvFmOJ4yqfUGKPFxBfZ2QNHkvrhHRWV9g3HPhvif0JPUlb2gVmuoN20EMcFM5YmXYjDc3E6J0vcvMdFdfgqcGYzF_fZQKXQf-HpizS7kuPYE7VNyZwZ5jpdEfWIPyL5-pn7FuRhLA1VnSYbPbHNbx6-uvGYkRo6UkOBRsH6jlsW0-XL7I5mEsBrTxLwxoOpFSzTelUW8WZ5f3')"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 border border-primary-container p-4 bg-background hidden md:block">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up of artisanal spices like vibrant red berbere powder and whole green cardamom pods arranged artistically on a textured stone surface, reflecting Ethiopian heritage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXezi4_V8kwYuYeZdqXXiAU4-rTElj1PEL97PPnNzwhVgO_f30oNUwFpZ4tIFKw6W4DCH1dNVS9OSK0KuDjHqdCCtlmK1RjVf9oo2ophS8KZpyvQHKxTGuewZtzILiKiPAFqC3R3O2AzKPdqdUTTf1gy-V_tXnT5ecko0yt4XTjVwtEOcJ_aAw8flrFhIKyavy34dqdkxHl_GBuI1VAQrOFUkJQ_bslCbnppqHm-hIKJ08S1lQbrMSq6-LkWiBL_OXUe8JZIMFa-4U')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Sections -->
+<section class="bg-surface-container-low py-section-padding-lg overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-20">
+<h2 class="font-headline-md text-headline-md text-on-background mb-4">Our Curated Menus</h2>
+<div class="w-20 h-[1px] bg-secondary mx-auto"></div>
+</div>
+<!-- Tabs -->
+<div class="flex flex-wrap justify-center gap-8 mb-16" id="menu-tabs">
+<button class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-2 px-4 transition-all">Breakfast</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Lunch</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Dinner</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Drinks</button>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+<!-- Item 1 -->
+<div class="flex justify-between items-start border-b border-outline-variant/30 pb-6 group">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background group-hover:text-secondary transition-colors">Continental Breakfast</h3>
+<p class="font-body-md text-on-surface-variant italic">Freshly baked croissants, artisan bread, butter, jam, seasonal fruit, yogurt, and your choice of coffee or tea.</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-2">$18</span>
+</div>
+<!-- Item 2 -->
+<div class="flex justify-between items-start border-b border-outline-variant/30 pb-6 group">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background group-hover:text-secondary transition-colors">Full English/Irish Breakfast</h3>
+<p class="font-body-md text-on-surface-variant italic">Eggs any style, bacon, sausages, grilled tomatoes, mushrooms, baked beans, toast, and black pudding.</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-2">$24</span>
+</div>
+<!-- Item 3 -->
+<div class="flex justify-between items-start border-b border-outline-variant/30 pb-6 group">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background group-hover:text-secondary transition-colors">Ethiopian Breakfast</h3>
+<p class="font-body-md text-on-surface-variant italic">Traditional fir-fir, chechebsa, or ful medames served with fresh injera and Ethiopian coffee ceremony.</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-2">$20</span>
+</div>
+<!-- Item 4 -->
+<div class="flex justify-between items-start border-b border-outline-variant/30 pb-6 group">
+<div class="space-y-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background group-hover:text-secondary transition-colors">Asian & Italian Breakfast</h3>
+<p class="font-body-md text-on-surface-variant italic">Choice of Asian-style congee with condiments or Italian breakfast with cappuccino, biscotti, and fresh mozzarella.</p>
+</div>
+<span class="font-label-caps text-label-caps text-primary mt-2">$22</span>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="border border-primary-container text-primary px-10 py-4 font-label-caps text-label-caps hover:bg-primary-container hover:text-white transition-all">
+                    View Full Dinner Menu
+                </button>
+</div>
+</div>
+</section>
+<!-- Gallery Bento Grid -->
+<section class="py-section-padding-lg px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">Atmosphere</span>
+<h2 class="font-headline-md text-headline-md text-on-background">The Dining Hall & Beyond</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[800px]">
+<!-- Main Hall -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Interior wide shot of the grand Roseau dining hall featuring high ceilings with intricate wooden beams and Ethiopian stone masonry walls. Large arched windows let in soft natural light, and the tables are dressed in crisp white linen with gold silverware. The overall aesthetic is one of regal, timeless luxury with a quiet, sophisticated atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApDxFCp5OdaGEXuv9S6ON7R85FIPbYp3i6KjXYJwWnp-haGFHkJ2LE1pRqOp6db1VlOa9OSl8mRNJlkuHhkPOUzPbeN1qREwPD8XIopTRvFzrEsKaEHq7DQtbS95Qb7jrd5pp_T91c4IkMVQdREx5gjPLkF8ZUfaEcl1P8WTHAw158XELNuei8zxB6qJ5PuJT3M0Tno1j3mVFvjAGHZsp6OO901v0XbbPqRc1fLoGWe0X5WqchWOX8yoHf0Nylom1-OS0WdGlbOXuP')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="font-label-caps text-label-caps">Imperial Hall</p>
+</div>
+</div>
+<!-- Garden Seating -->
+<div class="md:col-span-2 relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="An outdoor dining terrace surrounded by lush, tropical greenery and vibrant bougainvillea flowers at sunset. Minimalist wrought iron chairs and wooden tables are lit by small, hanging lanterns, creating a warm and intimate setting. The lighting is golden and soft, emphasizing a tranquil and exclusive garden retreat." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUaU_SMSORPogODvwf77K1jEYg2pmR-3WvXi9MokXgcmW1X7ZRsoqX-r4jTc_Pj23F1Q7TyGkW-BmQqUNg2zOXoa_nAwDrnvsHqKoshmopKthGRwldSCMV6j_cdMmIWEVbPvZT_FVmhWt0Nz5bacmdm8sU6CEBiH2xgZ9LmZMTivZsLCFFNkb-VYQgntzwjZy2nHD58nCApdwFcCCOXS-7lm-5kWjL-zIh_Oo3pBL7oK1PD0aWXmrMauJmEulu7U5jix6UNptHq934')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="font-label-caps text-label-caps">The Garden Terrace</p>
+</div>
+</div>
+<!-- Chef Special Close Up -->
+<div class="relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A macro photograph of a chef's special dessert, featuring a deconstructed honey cake with gold leaf accents and edible flowers. The plate is dark ceramic, providing a deep contrast to the golden honey and vibrant colors of the garnish. High-end, editorial food photography style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVVwo_itWkaHTnaipHmXRdVYCqF9wykFOxJyCV9VmjBZso_Z8putmUxu1Zbp-R-TQU7nudDpmKzVnCGB5ABHqyst2JvBEWKDD8OF6Tp8Xjj4EmkIhbJ6Wlst35eRnkrZ2VFK0JuIZKrCzm55fDs2R5XG9giTEcKR4ICxkQ3F_C4OWhdNCj1Bs-cjloRnoM1vzVTNTZrbKqyKR7KT3VWVfIc6MLNadurUNaxAVGwNxN4o0et9vecmB_dU81L6FLGNBzjpCKWZHdXns-')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+</div>
+<!-- Wine Cellar -->
+<div class="relative group overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A boutique wine cellar with bottles of premium Ethiopian and international wines stored in bespoke wooden racks. The lighting is dim and atmospheric, with a single warm spotlight on a wine tasting station with crystal glasses. A sense of exclusivity and curation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUNrmPIMUJSbrPwb92SrMeNhspqj2Oc0wCC2Ou8geSNtOs-y4RrD2D58XSXdYvcSd7b0LzVlxRgj7H_EX24iBZx9vFlFpYDHhS9oL5nctMUXJeCsUwu8Jw1bbM-IjnkpzXjcQ3UzS8CM5aud5rRYMLpM8WgVCFkAiWi2DAcqG11QPX11GM779UAoSlwepst0o_9gJ4PcuAU7LTX5pQDk7RgcUVAng2dBdXYqKwKLAn8e7h6ZpTvVQuokv0w7SOTBmT9sCb8xYCyIZ6')"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+</div>
+</div>
+</section>
+<!-- Wine & Spirits Highlight -->
+<section class="bg-secondary py-24 text-on-secondary">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<div class="aspect-square bg-cover bg-center border border-white/20 p-4" data-alt="Two elegant wine glasses filled with deep red wine on a dark wooden table. In the background, the soft blur of a burning fireplace creates a cozy, luxury hotel bar vibe. The color palette is dominated by deep reds and warm ambers, reflecting a premium spirits experience." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6Tv9wWKrQ_xa32mTCp_3Di00lmM9dN1jcS0E9ybxbzF-cOLKT7VAGff7eirx5iVQb4D2opqlMzFA6ZJEaiire4PMf48cP_dwRo1khVbYCEWqfoO4C9Nh5D30xqOPYERJgWE_VxPSMTR4_l8wbyp2SDguVHVpmxZWJWhmdNKOMc6yhFh9QfNkrh1GBsHn6QDuQSxZbKGQwLCtf3XliKYctMQhNUbLroVYJ-n2DL0hIBGNQrxEdb14SGWilJ7wJUoOuu28rnK0IFmnQ')"></div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<span class="font-label-caps text-label-caps tracking-widest text-primary-container">Exquisite Pairings</span>
+<h2 class="font-headline-md text-headline-md">The Roseau Cellar</h2>
+<p class="font-body-md opacity-80 leading-relaxed">Our sommelier has curated a selection of the world's finest vintages, alongside Ethiopia's emerging award-winning honey wines (Tej). Whether it's a bold Highland red or a crisp celebratory champagne, we have the perfect note for your palate.</p>
+<div class="pt-4">
+<button class="bg-white text-secondary px-8 py-3 font-label-caps text-label-caps hover:bg-primary-container hover:text-white transition-all">Explore Spirits</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary dark:bg-on-secondary-fixed-variant border-t border-primary/30 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto">
+<div class="mb-10 md:mb-0 space-y-6">
+<h2 class="font-display-lg text-headline-sm text-on-secondary">Roseau</h2>
+<p class="text-on-secondary/80 max-w-xs">An sanctuary of timeless elegance in the heart of the historic highlands.</p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-on-secondary cursor-pointer">face_nod</span>
+<span class="material-symbols-outlined text-on-secondary cursor-pointer">photo_camera</span>
+<span class="material-symbols-outlined text-on-secondary cursor-pointer">alternate_email</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed font-bold">Discover</h4>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="rooms.html">Rooms & Suites</a>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="dining.html">Dining</a>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="spa-wellness.html">Wellness Spa</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed font-bold">Information</h4>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="#">Privacy Policy</a>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="#">Terms of Service</a>
+<a class="text-on-secondary/80 hover:text-on-secondary font-body-md transition-all" href="#">Press Kit</a>
+<a class="text-primary-fixed hover:text-on-secondary font-body-md transition-all" href="admin-dashboard.html">Admin</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed font-bold">Contact</h4>
+<p class="text-on-secondary/80 font-body-md">Gondar, Ethiopia</p>
+<p class="text-on-secondary/80 font-body-md">+251 11 000 0000</p>
+</div>
+</div>
+</div>
+<div class="w-full border-t border-white/10 py-6 text-center">
+<p class="font-body-md text-on-secondary/60 text-sm">Â© 2024 Roseau Hotel & Spa. Gondar, Ethiopia.</p>
+</div>
+</footer>
+<script>
+        // Simple tab interaction
+        const tabs = document.querySelectorAll('#menu-tabs button');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => {
+                    t.classList.remove('text-primary', 'border-b-2', 'border-primary');
+                    t.classList.add('text-on-surface-variant');
+                });
+                tab.classList.add('text-primary', 'border-b-2', 'border-primary');
+                tab.classList.remove('text-on-surface-variant');
+                // In a real app, logic to filter menu items would go here
+            });
+        });
+
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,21 @@
+/* ============================================================
+   Attractions — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* 12-column castle grid layout */
+.castle-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* Bento card with soft shadow + lift on hover */
+.bento-card {
+    box-shadow: 0 30px 60px rgba(51, 51, 51, 0.04);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 40px 80px rgba(51, 51, 51, 0.08);
+}

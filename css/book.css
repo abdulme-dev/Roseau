@@ -1,0 +1,25 @@
+/* ============================================================
+   Book Your Stay — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* Booking stepper states */
+.step-active {
+    color: #735c00;
+    border-bottom: 2px solid #d4af37;
+}
+.step-inactive {
+    color: #7f7663;
+}
+
+/* Custom scrollbar for stepper (horizontal scroll on mobile) */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d0c5af;
+    border-radius: 10px;
+}

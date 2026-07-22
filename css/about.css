@@ -1,0 +1,35 @@
+/* ============================================================
+   About / Our Story — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* Heritage timeline connector line */
+.timeline-line {
+    position: relative;
+}
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, #d4af37, transparent);
+}
+
+/* Signature quote styling */
+.signature-quote {
+    position: relative;
+    font-style: italic;
+}
+.signature-quote::before {
+    content: '"';
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    font-size: 6rem;
+    color: #d4af37;
+    opacity: 0.3;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}

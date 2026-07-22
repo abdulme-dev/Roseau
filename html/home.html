@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Roseau Hotel & Spa | Gondar, Ethiopia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#b22b1d",
+                    "on-background": "#1b1c1c",
+                    "background": "#fbf9f8",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d0c5af",
+                    "surface-tint": "#735c00",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-high": "#eae8e7",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffdad4",
+                    "on-secondary-fixed-variant": "#8f0f07",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-container": "#444543",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "outline": "#7f7663",
+                    "tertiary-fixed-dim": "#c7c6c4",
+                    "tertiary": "#5e5f5d",
+                    "surface-variant": "#e4e2e1",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "on-tertiary-fixed": "#1a1c1a",
+                    "on-tertiary-fixed-variant": "#464745",
+                    "on-primary": "#ffffff",
+                    "primary": "#735c00",
+                    "secondary-container": "#fe624e",
+                    "surface-bright": "#fbf9f8",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-fixed": "#e3e2e0",
+                    "on-secondary-container": "#650000",
+                    "on-primary-container": "#554300",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#4d4635",
+                    "tertiary-container": "#b3b3b0",
+                    "on-secondary-fixed": "#410000",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-padding-lg": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/home.css"/>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html"><div class="font-display-lg text-headline-md text-primary">Roseau</div></a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+</div>
+<a href="book-your-stay.html" class="bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95">
+                Book Your Stay
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic wide-angle photograph of the Roseau Hotel exterior in Gondar, Ethiopia, during a golden sunset. The architecture blends modern glass with traditional stone elements reminiscent of Gondar's historic castles. Warm, amber light bathes the facade, casting long, elegant shadows across manicured highland gardens. The sky is a gradient of deep orange and soft purple, creating a tranquil and regal atmosphere for this luxury retreat." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1iiO_PUTV6uO3oWgYpUgNEK2u0jw-wYxzDHPNZMQp1BHSEG4yO0KsCcgHOwSzt61c0SWZpjBZMwK0HpVM96zISlGGO-06tMQ80V2xVDJBt3QG5CAwd4LHr8ZuBkGvTvLAGu66b8nADh3wh0g2wMiznvE7VC36QlnOEl25YwbJVer51PgosViZWyJ-QDS7BwDyJlq20hn8R_wxHXhj_kVLqrg1Ttf3fn3u_cmAN7ax6JBLX3ifmS5GNucLCYOLZdIWYcSd3Heggyoh')"></div>
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 text-center text-white px-gutter max-w-4xl mx-auto reveal active">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 text-shadow-premium">
+                Roseau Hotel & Spa: Luxury, Comfort, and Ethiopian Hospitality
+            </h1>
+<p class="font-body-lg text-body-lg mb-10 opacity-90 max-w-2xl mx-auto">
+                Located on A3 Road, near Noor Hospital, Gondar, Ethiopia. A modern hotel designed for business travelers, tourists, families, and couples seeking comfortable accommodation with world-class wellness facilities.
+            </p>
+<a href="book-your-stay.html" class="bg-primary-container text-on-primary-container px-10 py-5 font-label-caps text-label-caps text-lg hover:opacity-90 transition-all shadow-xl active:scale-95">
+                Book Your Stay Today
+            </a>
+</div>
+<!-- Quick Booking Bar -->
+<div class="absolute bottom-0 left-0 right-0 z-20 px-gutter mb-12 hidden md:block reveal active" style="transition-delay: 200ms;">
+<div class="max-w-container-max mx-auto bg-surface/95 backdrop-blur shadow-2xl p-8 border-t-4 border-primary-container flex items-end gap-8">
+<div class="flex-1">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Check-in</label>
+<input class="w-full underline-input py-2" type="date"/>
+</div>
+<div class="flex-1">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Check-out</label>
+<input class="w-full underline-input py-2" type="date"/>
+</div>
+<div class="flex-1">
+<label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">Guests</label>
+<select class="w-full underline-input py-2">
+<option>1 Guest</option>
+<option selected="">2 Guests</option>
+<option>3 Guests</option>
+<option>4+ Guests</option>
+</select>
+</div>
+<button class="bg-primary px-8 py-4 text-white font-label-caps text-label-caps hover:bg-on-primary-fixed-variant transition-colors">
+                    Check Availability
+                </button>
+</div>
+</div>
+</section>
+<!-- Welcome Message -->
+<section class="py-section-padding-lg px-gutter max-w-container-max mx-auto text-center reveal">
+<div class="w-24 h-px bg-secondary mx-auto mb-8"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">
+            Welcome to Roseau Hotel & Spa — Gondar's Premier Modern Retreat
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+            Located on A3 Road near Noor Hospital, just 10 km from Gondar Airport, our hotel combines modern amenities with authentic Ethiopian hospitality. Whether you're here for business, leisure, or a family getaway, enjoy free airport shuttle, complimentary Wi-Fi, and free private parking throughout your stay.
+        </p>
+
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="p-4">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">local_parking</span>
+<p class="font-label-caps text-label-caps text-on-surface">Free Parking</p>
+</div>
+<div class="p-4">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">airport_shuttle</span>
+<p class="font-label-caps text-label-caps text-on-surface">Free Shuttle</p>
+</div>
+<div class="p-4">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">wifi</span>
+<p class="font-label-caps text-label-caps text-on-surface">Free Wi-Fi</p>
+</div>
+<div class="p-4">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">star</span>
+<p class="font-label-caps text-label-caps text-on-surface">4.7 Rating</p>
+</div>
+</div>
+</section>
+<!-- Featured Rooms -->
+<section class="bg-surface-container-low py-section-padding-lg">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="reveal">
+<p class="font-label-caps text-label-caps text-primary mb-2">Accommodations</p>
+<h2 class="font-headline-md text-headline-md">Our Premium Sanctuaries</h2>
+</div>
+<div class="reveal">
+<button class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 hover:opacity-70 transition-opacity">
+                        View All Rooms
+                    </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Room 1: Deluxe Double Room -->
+<div class="bg-surface border border-primary-container p-4 reveal" style="transition-delay: 100ms;">
+<div class="overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A luxury hotel room interior at Roseau Hotel. Features a king-size bed with crisp white linens and a traditional Ethiopian woven throw in gold and red. Large windows overlook the misty mountains of Gondar. The lighting is soft and warm, highlighting the polished wooden floors and minimalist furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpV4KwjkzG6c0O2E71rk-9TKykfX3AoJOAfq8D-B9voph9UR2rwoIRmiCK0OctyDkiQpp_vRM4ajJNGQp0MNM9VZ81SQjS3e1LjBebkAqgHJu4GllBKJjcNQNcPUa17eLxH0WwpO6GDiVN2nk3uZ008rt5oVat7gFoYQYogny8MWzsb-ao-OSC44WM2OhPEN3PteDGKEUbgkKdOFIFYphiC7MGcFfZB3NrEtcDPCsOOAkL5m4goqf8nlKgm13bjS2l32SRwSv5gBaj"/>
+</div>
+<div class="text-center pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2">Deluxe Double Room</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Extra-large double bed &bull; Mountain or city view &bull; Private balcony</p>
+<div class="grid grid-cols-3 gap-2 mb-4 text-primary text-xs">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+<span class="material-symbols-outlined text-[16px]">tv</span>
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+</div>
+<div class="w-12 h-px bg-secondary mx-auto mb-4"></div>
+<p class="font-label-caps text-label-caps text-primary font-bold">From $120 / night</p>
+</div>
+</div>
+<!-- Room 2: Deluxe Twin Room -->
+<div class="bg-surface border border-primary-container p-4 reveal" style="transition-delay: 300ms;">
+<div class="overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A bright Deluxe Twin Room with two comfortable single beds dressed in crisp white linens, large windows with mountain views, minimalist modern decor in soft cream tones, elegant lighting, and a cozy seating area." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Qt_mL--esLGyVcHWOFLF7pkXB56xThhIkYkRiGZc8mLORWbz2WaL0kBpTO4zi0gWzTLiz6dkEHmiTfDVdbd7RxGOSf_bVcqIh0OU82yNqu9nNHkfEmuMHKtZtqXPZDT89NSeinI4oBoKeYWAn585syeTHuWYpqhdrtJvkkP2fDW9nSZBrOy503JIj1YK13yGwMR6gMe3NcEmmNnUuKvM0i_pHb6Hn6dcrTgewBpCj3rZe7kwWvce4ZYRdqEzSFv1yqE-zoPGSwWm"/>
+</div>
+<div class="text-center pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2">Deluxe Twin Room</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Two single beds &bull; Mountain views &bull; Perfect for friends &amp; family</p>
+<div class="grid grid-cols-3 gap-2 mb-4 text-primary text-xs">
+<span class="material-symbols-outlined text-[16px]">ac_unit</span>
+<span class="material-symbols-outlined text-[16px]">tv</span>
+<span class="material-symbols-outlined text-[16px]">coffee</span>
+</div>
+<div class="w-12 h-px bg-secondary mx-auto mb-4"></div>
+<p class="font-label-caps text-label-caps text-primary font-bold">From $110 / night</p>
+</div>
+</div>
+<!-- Room 3: Deluxe Junior Suite -->
+<div class="bg-surface border border-primary-container p-4 reveal" style="transition-delay: 500ms;">
+<div class="overflow-hidden mb-6 aspect-[4/5]">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A spacious Deluxe Junior Suite with a separate living area, spa bath, and private balcony overlooking Gondar. Premium amenities include a king bed, elegant Ethiopian decor, and sweeping mountain and city views." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7QKmeg9UcF8nzAp0cRgzkeztvaD2nHvHMqapm_dPfmFicrIOJU9QqaQMmQN1KiqGLlcvahctOJh1nMlISPLcdrwr7BtNw8bvF5OzTK_IgdOm7HpJOmTiNjiorkUnPo3ZejhLiu3qLkku6w_Gz11m5Z4y2L7rCqPw40Wr6aO7jr51cq9EjMS8kAtetzs59cE9o46mkHrJ3Ve4ht02CSBdXtFmWCbQNquNYKcK0hwT77uw68iYn0QfPs22u-6ITO-vcIlTCMuKcfLXD"/>
+</div>
+<div class="text-center pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2">Deluxe Junior Suite</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Separate bedroom &bull; Living room &bull; Spa bath &bull; Panoramic views</p>
+<div class="grid grid-cols-3 gap-2 mb-4 text-primary text-xs">
+<span class="material-symbols-outlined text-[16px]">bathtub</span>
+<span class="material-symbols-outlined text-[16px]">weekend</span>
+<span class="material-symbols-outlined text-[16px]">balcony</span>
+</div>
+<div class="w-12 h-px bg-secondary mx-auto mb-4"></div>
+<p class="font-label-caps text-label-caps text-primary font-bold">From $220 / night</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Spa Highlights -->
+<section class="relative py-section-padding-lg overflow-hidden">
+<div class="px-gutter max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative reveal">
+<div class="aspect-[3/4] border-l-8 border-t-8 border-primary-container">
+<img class="w-full h-full object-cover -translate-x-6 translate-y-6 shadow-2xl" data-alt="A serene spa interior at Roseau Hotel & Spa. A large, circular infinity pool of calm turquoise water is centered in a room made of rough-hewn Gondar stone. Steam rises gently into the soft, diffused morning light. Minimalist wooden loungers with white towels are placed neatly along the edge. The vibe is one of extreme exclusivity and ancient tranquility, using high-key lighting to enhance the feeling of purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrJXE2CwXlWpTRasBkfupaoJNc23iUNi-VEysJGpFSNLt3GuZSEAiw4_g1tM8Eu2JiNZ8ptTB9yB7d737JSnaw4B-EHR7hncnDfKKNkJ5cTrbHgIW-bVVnd6IfRLr-Mxixj-gGDfNlCb_Qm5fXn9otJ0Xg_o7-HyP_ylAdO8_lg77DZR6Yxeq23Fx911VI9t7UHnImwKJKxN3TZut8YiqBNKhAR_NBoVl_kj4436HCTz2SpCjF-FcNzMiZYN3hSqq-kMusVE2dNxXC"/>
+</div>
+</div>
+<div class="reveal">
+<p class="font-label-caps text-label-caps text-primary mb-2">Wellness & Rejuvenation</p>
+<h2 class="font-display-lg text-headline-md md:text-headline-md mb-8">Celestial Spa Rituals</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                    Rejuvenate at our full-service spa featuring massage therapy, sauna, steam room, and hot tub/jacuzzi. Join our yoga classes in the relaxation area, or choose from curated wellness packages designed to restore balance to mind, body, and soul.
+                </p>
+<a href="spa-wellness.html" class="border border-primary-container text-primary px-8 py-4 font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-95">
+                    Discover Tranquility
+                </a>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="bg-surface py-section-padding-lg">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-md text-headline-md mb-4">Guest Testimonials</h2>
+<p class="font-label-caps text-label-caps text-outline mb-2">4.7 / 5 &mdash; Rated by 130+ guests on Google</p>
+<div class="flex justify-center gap-1 mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary-container reveal" style="transition-delay: 100ms;">
+<p class="font-body-md text-on-surface-variant italic mb-6">"An absolute gem in Gondar. The blend of royal history and modern luxury is flawless. The staff made us feel like kings throughout our stay."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-outline">person</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface">Elena S.</p>
+<p class="text-[10px] text-outline uppercase tracking-widest">United Kingdom</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary-container reveal" style="transition-delay: 200ms;">
+<p class="font-body-md text-on-surface-variant italic mb-6">"The spa treatments are world-class. I've stayed in luxury hotels across Africa, but Roseau's attention to detail and hospitality is unique."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-outline">person</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface">Marcus T.</p>
+<p class="text-[10px] text-outline uppercase tracking-widest">Germany</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary-container reveal" style="transition-delay: 300ms;">
+<p class="font-body-md text-on-surface-variant italic mb-6">"The views from the Highland Suite are breathtaking. Waking up to the mist over the historical castles was a spiritual experience."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-outline">person</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface">Amara K.</p>
+<p class="text-[10px] text-outline uppercase tracking-widest">Ethiopia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full bg-secondary text-on-secondary border-t border-primary/30">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto gap-12">
+<div class="max-w-xs">
+<div class="font-display-lg text-headline-sm text-on-secondary mb-6">Roseau</div>
+<p class="font-body-md text-on-secondary/80 mb-8 leading-relaxed">
+                    Located on A3 Road, near Noor Hospital, Gondar, Ethiopia. A modern sanctuary offering comfortable accommodation, world-class wellness facilities, and authentic Ethiopian hospitality just minutes from the Royal Enclosure.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-on-secondary/30 flex items-center justify-center hover:border-on-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 border border-on-secondary/30 flex items-center justify-center hover:border-on-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 border border-on-secondary/30 flex items-center justify-center hover:border-on-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-6">Experience</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="#">Our Story</a></li>
+<li><a class="font-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="dining.html">Fine Dining</a></li>
+<li><a class="font-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="spa-wellness.html">Spa & Wellness</a></li>
+<li><a class="font-body-md text-on-secondary/80 hover:text-on-secondary transition-colors" href="#">Gondar Guide</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-white mb-6">Contact</h4>
+<ul class="space-y-4 font-body-md text-on-secondary/80">
+<li>Gondar, Ethiopia</li>
+<li>+251 (0) 58 111 2233</li>
+<li>reservations@roseauhotel.com</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-label-caps text-label-caps text-white">Join our Registry</h4>
+<div class="flex">
+<input class="bg-transparent border-b border-on-secondary/30 py-2 focus:outline-none focus:border-on-secondary w-48 text-on-secondary" placeholder="Email Address" type="email"/>
+<button class="ml-4 material-symbols-outlined">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="px-gutter py-8 border-t border-on-secondary/10 w-full max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-on-secondary/60">Â© 2024 Roseau Hotel & Spa. Gondar, Ethiopia.</p>
+<div class="flex gap-8">
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Terms of Service</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Press Kit</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container text-primary-fixed-dim" href="admin-dashboard.html">Admin</a>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-4', 'shadow-sm');
+            } else {
+                nav.classList.add('py-4', 'shadow-sm');
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    </script>
+</body></html>

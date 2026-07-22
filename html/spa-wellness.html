@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spa & Wellness | Roseau Hotel & Spa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "surface-container": "#f0eded",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "primary-container": "#d4af37",
+                      "on-secondary": "#ffffff",
+                      "inverse-primary": "#e9c349",
+                      "secondary": "#b22b1d",
+                      "on-background": "#1b1c1c",
+                      "background": "#fbf9f8",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#d0c5af",
+                      "surface-tint": "#735c00",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-container-high": "#eae8e7",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#ffdad4",
+                      "on-secondary-fixed-variant": "#8f0f07",
+                      "surface": "#fbf9f8",
+                      "primary-fixed-dim": "#e9c349",
+                      "on-tertiary-container": "#444543",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-on-surface": "#f3f0f0",
+                      "outline": "#7f7663",
+                      "tertiary-fixed-dim": "#c7c6c4",
+                      "tertiary": "#5e5f5d",
+                      "surface-variant": "#e4e2e1",
+                      "secondary-fixed-dim": "#ffb4a8",
+                      "on-tertiary-fixed": "#1a1c1a",
+                      "on-tertiary-fixed-variant": "#464745",
+                      "on-primary": "#ffffff",
+                      "primary": "#735c00",
+                      "secondary-container": "#fe624e",
+                      "surface-bright": "#fbf9f8",
+                      "on-surface": "#1b1c1c",
+                      "surface-dim": "#dcd9d9",
+                      "on-primary-fixed": "#241a00",
+                      "on-primary-fixed-variant": "#574500",
+                      "tertiary-fixed": "#e3e2e0",
+                      "on-secondary-container": "#650000",
+                      "on-primary-container": "#554300",
+                      "inverse-surface": "#303030",
+                      "surface-container-highest": "#e4e2e1",
+                      "on-surface-variant": "#4d4635",
+                      "tertiary-container": "#b3b3b0",
+                      "on-secondary-fixed": "#410000",
+                      "primary-fixed": "#ffe088"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "32px",
+                      "container-max": "1280px",
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "section-padding-lg": "120px"
+              },
+              "fontFamily": {
+                      "headline-sm": ["Playfair Display"],
+                      "display-lg": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"],
+                      "display-lg-mobile": ["Playfair Display"],
+                      "label-caps": ["Montserrat"],
+                      "body-lg": ["Montserrat"],
+                      "body-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/spa.css"/>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md dark:bg-surface-container-highest/90 border-b border-primary/20 dark:border-primary-container/20 shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html"><div class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim">Roseau</div></a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+</div>
+<a href="book-your-stay.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+                Book Your Stay
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[819px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover scale-105 animate-[subtle-zoom_20s_infinite_alternate]" data-alt="A serene, high-end luxury spa treatment room in Gondar, Ethiopia. The scene features warm, golden light filtering through traditional carved stone windows onto a massage table draped in pristine white linen. Soft steam rises in the background from a polished copper bowl. The atmosphere is peaceful, minimalist, and regal, with a palette of cream, sand, and brushed gold accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXGUSov9BXWOccnqsPLDfj41PeGVsk7L8UV-qZ7nnIZ5JwdhzVQCh9Ev61FCBa4VkB9ShPsVOGsMblBaH_Q8EuI5DqIM3V7VC1qaUmXTR9FftBprjDlrk09G1HWqZnkkORT2etnGDodHbfySbmbh9hOG7pQ6L7NND42qcml4zc6ny-diMADA5aMpLXPoYro17zDIeJZELwCruIxnsLFUUtneQjTizXkhj25OXwtkHj6l0xVDe9bNkptENGFnHpHypUzFShdR7wkDPj"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="relative z-10 text-center text-white px-gutter">
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-4 drop-shadow-lg">A Sanctuary of Wellness</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto opacity-90">Rejuvenate your body and soul in our world-class spa facilities, where ancient Ethiopian healing traditions meet modern luxury.</p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_arrow_down</span>
+</div>
+</header>
+<main>
+<!-- Introduction -->
+<section class="py-section-padding-lg px-gutter max-w-container-max mx-auto text-center">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-primary mb-4 block uppercase tracking-widest">Heritage & Harmony</span>
+<h2 class="font-headline-md text-headline-md mb-6 gold-underline inline-block pb-4">The Art of Stillness</h2>
+<p class="font-body-md text-body-md max-w-3xl mx-auto text-on-surface-variant leading-relaxed">
+                    Our full-service spa features massage therapy, sauna, steam room, hot tub/jacuzzi, yoga classes, and a dedicated relaxation area. Choose from our curated wellness packages and rejuvenate at our modern gym with cardio and strength equipment.
+                </p>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="py-section-padding-lg bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[800px]">
+<!-- Large Feature: Massage -->
+<div class="md:col-span-7 relative group overflow-hidden rounded-lg shadow-sm border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a luxury massage treatment at Roseau Spa. Skilled hands applying organic Ethiopian oils to a guest's back. The lighting is low and warm, highlighting the golden tones of the oil and the soft texture of the white towels. Minimalist stone walls provide a grounded, architectural backdrop. The mood is one of intense focus and relaxation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgUPA-1uUIUJpYzseToIWLFa_fcezkr1pldSI7LQczllxay57laN5pe89-XzBsNWu0CY-FBi1Z2kNa8LvyhjxVYjevvJQvtnfc59802IG4geJUvLkFoFHHjknTNGEarXyFNlni5z-ZW9pYkwRG7nHvboeFDn7PRv7RV__eQuj_CKiYg7Xj6ehtZajLklYiTD1NPHpGGbWsRTo1Cx4s2bXM3Ka9c1f-fDSZG2M4ZKQZAbljlDz2YeUw1-AdLSVfsRSSRz0LyYoJ8AUh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-10">
+<h3 class="font-headline-sm text-headline-sm text-white mb-2">Massage &amp; Wellness Packages</h3>
+<p class="text-white/80 font-body-md mb-4 max-w-md">Full spa services including massage, sauna, steam room, hot tub/jacuzzi, yoga classes, and personalized wellness packages.</p>
+<button class="w-fit text-primary-container font-label-caps text-label-caps border border-primary-container px-6 py-2 hover:bg-primary-container hover:text-white transition-all">Explore Rituals</button>
+</div>
+</div>
+<!-- Side Grid: Sauna & Steam -->
+<div class="md:col-span-5 grid grid-rows-2 gap-8">
+<div class="relative group overflow-hidden rounded-lg shadow-sm border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A modern designer sauna with golden cedar wood slats and ambient LED lighting tucked behind the benches. The design is sleek and minimalist, with a large glass front looking out onto a private courtyard. Soft steam hangs in the air. The aesthetic is warm, clean, and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzePTM3hGv32FWGHXe9Plm7oJXRU5c0bu1CnBTaF21YIJiBc9D0B4j9mGKKuKm3qYvGQCACdIUGIUclP6ypVc6kbuq4lXJsfsnFZ5hNwqd1HZUy6cy_ZJXSHwBgLoCyEFVwsIweWJ3arI6v7sOrE4yK8xCsU1rDfOIjXynlSR5LCcOE2dfE-AjKL4eB-hmbcbhVrBfaR5Xm8C__LBvu-DUY7bE8WHWZecAIgfuHrjwHOVkldP5mIuZGdr1oUUuIoe6BTU76OHvzB15"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="text-center p-6 bg-surface/90 backdrop-blur-sm m-4">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Dry Sauna</h3>
+<p class="font-body-md text-on-surface-variant">Detoxify in the heat of the highlands.</p>
+</div>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg shadow-sm border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxurious marble steam room with mosaic tile details in shades of gold and cream. Soft, ethereal steam fills the space, illuminated by recessed pin-lights in the ceiling that look like stars. A stone fountain sits in the center. The style is regal and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv3TQ7o6HwgPv7OP4h0ILXjDo2Ze67yytE-kNT8ou-rnMlnKU4WRFjb4ypONY1KSmrEi-x_7Z7NSpCvA0X1iBaD4rXbI-GnBKjKV4_pBblSIGByEo7TrgEgu-OqyCL3H8hLSzFZ4Cx7HjRc3pqcMdyuHTlfd7lOrwVMCHk3ogVYlxtBID-kPDfmXDFUJrZToud5a92q3BJpkDksyo2IySKDtniJm4QDoX_AKGqG2KPGeyMSIFgvEsUZ6XSW_1hMe91QIoQloRdq3JT"/>
+<div class="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="text-center p-6 bg-surface/90 backdrop-blur-sm m-4">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Steam Room</h3>
+<p class="font-body-md text-on-surface-variant">Rehydrate with botanical-infused vapor.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Wide: Face & Body -->
+<div class="md:col-span-12 relative h-64 group overflow-hidden rounded-lg shadow-sm border border-outline-variant/30">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide shot of a luxury facial treatment setup. Glass jars filled with golden serums and fresh herbs sit on a stone counter. In the background, a therapist is preparing a treatment for a guest. High-key lighting, bright and airy luxury spa aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjKIumOvy3X_XWS-qz8l81T3DN8-C6STSYApvyTOHLzNRlXWLMDIMA8ARLQY9RETEwSok_7Tdnn04atIDYb8AFkTpe_mfputYzdyyB54QZislw6_HK7rwQPeLa1m3PWpvFmIYs_zJ2ZJ4LQ64lOtdWoWveT0chS9ecx9h-HVrwmQaaSavWrBm2A8Gd_Co5R1f9g4dRAKPGN9SWud9RkxuTtDyR3OTNvMmnMYsK9znesQI2FAW6RPUk813swi5VLzt1g8VRGQIf9DCF"/>
+<div class="absolute inset-0 bg-white/20 backdrop-blur-[2px] flex items-center justify-between px-12">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fitness &amp; Entertainment</h3>
+<p class="font-body-md text-on-surface-variant">Modern gym with cardio &amp; strength equipment, plus nightclub, lounge, and bars for evening entertainment.</p>
+</div>
+<button class="bg-primary text-white px-8 py-3 rounded-DEFAULT font-label-caps text-label-caps hover:bg-primary/90 transition-colors">View Menu</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-section-padding-lg px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md mb-4">The Gallery</h2>
+<div class="w-12 h-[1px] bg-primary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A stunning indoor infinity pool at Roseau Hotel. The water is crystal clear and reflects the arched stone ceiling inspired by Fasil Ghebbi. Golden hour light streams in from high windows. The atmosphere is quiet and exclusive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT56REubeBh-d-uEOIFkECiraSuu9455ECCqppmEOkVPM66VUtct7iJo1K9yUwKLlRifV_WhYbwjKh99QPJX-PbJxcPpA3ntS89PucJg-TS-Edeyq1aSPjmO5ipLqVYAfT3QcdubHT21nAdujRuflYZt-xXvDKZ7SQQGf3AsUlL00_b32XuJlbF3qlymLnFYGgPLpkSz4tHRLIuWoqMyR_b5P99_vNJ2Wf_KGdsx6ZHfGP20V1unvIH61YbVWdJfXu5iRhyHgMcqWx"/>
+</div>
+<div class="aspect-video md:aspect-auto md:row-span-2 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A high-end hotel gym with state-of-the-art equipment. The floor is dark polished wood, and the walls are large glass panels looking out onto the lush gardens of Gondar. The lighting is bright and energizing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSgVapktuiaWqOtmDlv6oqHdw3ZTgfG3ZvBnpUbi69mdisR7y_MIlefdXnEkyCwlg6T1tQ0ok3euPx7sqFzJRy50z9PfK7NrjlNFLHejfz_i8AWy65C-r7y_kMHYAa0W1_Aky2BTTGf5ceJNq3iD6XokUZxJ1bzB4Bovv2ib8AKJa8kqzaEZRJAQlLR_ldJauwLU5_ZEq69fe5hbds_83ErWbw4zF463mPO_YvIgXswbL3xYF0y-f-CqeqgVIGVggpS8op-JB3WIrG"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Detail shot of the spa lounge area. Plush cream-colored loungers are arranged around a modern fire pit. A tray with herbal tea and dried fruits sits on a low wooden table. Soft, serene mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUszltvJkXnGgFpoeGbPvQc4cdi-Ele7mx5q8SBbWR6pNWRMkViJKkhh_XK4oYEsJ1MQgqQm2PNDDv21TrjADvGC6dxGj3DBzcBZ0AWlkaXgraJ41e7isZMpNctyUUv-NqLJCUimQxdGJWw4sshgwNoFPK4NkadIvnjSGsUANjszxhcKKuqzival5HVVH1VH3EeOEzW10XFovmuApEXAA-tX-ua3Wne3Z3jXRvPXDqk8aZFvJIYTZP7MmmutvUE5uhGSbtvDtmd2ZI"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Close up of a flower-strewn therapy bath at Roseau Spa. Floating hibiscus and jasmine petals in warm water within a hand-carved stone tub. The aesthetic is natural, organic luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf_ym0iNsz_XkpHRy-cq2BZ4ytQQp35cEDHl1u3sA0xqNAZgrM2lb09JjGivfSTaw_hsaYtmdB_Cz3Udx5gaSAa_XB1S7K8jRYr5yPRmIvclPJ78c0A4AT7aswDTUDFFVvDsuwiEhmJntzD9q09PKwfWGKk30fLdSjuy6ws-iT_sdTjLaUh4b8S1my1_czmZ8tYH3zxfdIBmxdJMCwXNaF3n-x-HQS3zGE0QFRo1LGgI6fxOYQ3HwqMW_mxetfNwLhthqmO4yCSoLQ"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Exterior view of the spa entrance at night. The building is made of local stone with warm up-lighting that emphasizes the texture. A small reflection pool leads to the heavy wooden doors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhVY6b0MmrD8fIqEHesmK441jvi0uWZmj_EZxVZcBQiwMnf8wdLinYXNgl8Yr3PqcPHnV_YvFohn5MVQnL4FdAin5g30e8GcUNTMeU_cpNLkNvN4qexEqfgcIZeAvOAYMi4hhVcizJA0iM2vrmb7Q_muXoLIVQnA0nbeoKcG1KH-dX3yjJv2U-IfapdVXPWDM1AXBJo6v7lx6F5KnnpQNllkYeFzTWKtPehFblu-9OJOKrXO2BtoyyDp854GXf5CwOVvJftbX4Q0xt"/>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-section-padding-lg bg-surface-container-highest relative overflow-hidden" id="book-spa">
+<!-- Decorative Background Element -->
+<div class="absolute -right-20 -top-20 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px] text-primary">spa</span>
+</div>
+<div class="max-w-4xl mx-auto px-gutter relative z-10">
+<div class="glass-card p-12 rounded-lg shadow-xl">
+<div class="text-center mb-10">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Reserve Your Experience</h2>
+<p class="font-body-md text-on-surface-variant">Select your preferred treatment and time to begin your journey.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col space-y-2">
+<label class="font-label-caps text-label-caps text-primary">Full Name</label>
+<input class="bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary transition-colors py-2 font-body-md placeholder:text-outline-variant" placeholder="Abebe Bikila" type="text"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-caps text-label-caps text-primary">Email Address</label>
+<input class="bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary transition-colors py-2 font-body-md placeholder:text-outline-variant" placeholder="wellness@roseau.com" type="email"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-caps text-label-caps text-primary">Treatment Type</label>
+<select class="bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary transition-colors py-2 font-body-md">
+<option>Signature Massage (90 min)</option>
+<option>Highland Body Scrub (60 min)</option>
+<option>Royal Facial (75 min)</option>
+<option>Steam & Sauna Pass</option>
+</select>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-caps text-label-caps text-primary">Preferred Date</label>
+<input class="bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary transition-colors py-2 font-body-md" type="date"/>
+</div>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-caps text-label-caps text-primary">Special Requests or Health Considerations</label>
+<textarea class="bg-transparent border-0 border-b border-outline focus:ring-0 focus:border-primary transition-colors py-2 font-body-md placeholder:text-outline-variant" placeholder="Tell us how we can make your visit perfect..." rows="2"></textarea>
+</div>
+<div class="pt-6 flex justify-center">
+<button class="bg-primary-container text-on-primary-container px-12 py-4 rounded-DEFAULT font-label-caps text-label-caps shadow-md hover:shadow-lg transition-all active:scale-95 group" type="submit">
+                                Confirm Reservation
+                                <span class="material-symbols-outlined align-middle ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-secondary dark:bg-on-secondary-fixed-variant border-t border-primary/30">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto">
+<div class="mb-10 md:mb-0">
+<div class="font-display-lg text-headline-sm text-on-secondary mb-4">Roseau Hotel & Spa</div>
+<p class="font-body-md text-on-secondary/60 max-w-xs">A luxury retreat in the heart of the historic city of Gondar.</p>
+</div>
+<div class="flex flex-wrap gap-x-12 gap-y-6">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-secondary font-bold">Contact</span>
+<p class="font-body-md text-on-secondary/80">info@roseauhotel.com</p>
+<p class="font-body-md text-on-secondary/80">+251 11 123 4567</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-secondary font-bold">Legal</span>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Terms of Service</a>
+<a class="font-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container" href="#">Press Kit</a>
+<a class="font-body-md text-primary-fixed hover:text-on-secondary hover:underline decoration-primary-container" href="admin-dashboard.html">Admin</a>
+</div>
+</div>
+</div>
+<div class="px-gutter py-6 border-t border-white/10 text-center md:text-left">
+<p class="font-body-md text-body-md text-on-secondary/60">Â© 2024 Roseau Hotel & Spa. Gondar, Ethiopia.</p>
+</div>
+</footer>
+<script>
+        // Simple scroll animation trigger
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10', 'opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        // Add reveal classes and observe
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Smooth header shrinking
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body></html>

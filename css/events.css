@@ -1,0 +1,19 @@
+/* ============================================================
+   Events & Celebrations — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* Event card hover — gold border appears */
+.event-card {
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.event-card:hover {
+    border-color: #d4af37;
+    box-shadow: 0 30px 60px rgba(51, 51, 51, 0.06);
+}
+
+/* Capacity badge */
+.capacity-badge {
+    background: rgba(251, 249, 248, 0.95);
+    border: 1px solid #d4af37;
+}

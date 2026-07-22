@@ -1,0 +1,9 @@
+/* ============================================================
+   Rooms & Accommodations — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* Room card image zoom on hover */
+.room-card-hover:hover .room-image {
+    transform: scale(1.05);
+}

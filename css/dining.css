@@ -1,0 +1,17 @@
+/* ============================================================
+   Dining — Page-specific Styles
+   Roseau Hotel & Spa
+   ============================================================ */
+
+/* Menu link gold underline on hover */
+.menu-underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #d4af37;
+    transition: width 0.3s ease;
+}
+.menu-underline:hover::after {
+    width: 100%;
+}

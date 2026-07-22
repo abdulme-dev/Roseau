@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Roseau Hotel & Spa | Explore Gondar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#b22b1d",
+                    "on-background": "#1b1c1c",
+                    "background": "#fbf9f8",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d0c5af",
+                    "surface-tint": "#735c00",
+                    "surface-container-low": "#f6f3f2",
+                    "surface-container-high": "#eae8e7",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#ffdad4",
+                    "on-secondary-fixed-variant": "#8f0f07",
+                    "surface": "#fbf9f8",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-container": "#444543",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f3f0f0",
+                    "outline": "#7f7663",
+                    "tertiary-fixed-dim": "#c7c6c4",
+                    "tertiary": "#5e5f5d",
+                    "surface-variant": "#e4e2e1",
+                    "secondary-fixed-dim": "#ffb4a8",
+                    "on-tertiary-fixed": "#1a1c1a",
+                    "on-tertiary-fixed-variant": "#464745",
+                    "on-primary": "#ffffff",
+                    "primary": "#735c00",
+                    "secondary-container": "#fe624e",
+                    "surface-bright": "#fbf9f8",
+                    "on-surface": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "on-primary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#574500",
+                    "tertiary-fixed": "#e3e2e0",
+                    "on-secondary-container": "#650000",
+                    "on-primary-container": "#554300",
+                    "inverse-surface": "#303030",
+                    "surface-container-highest": "#e4e2e1",
+                    "on-surface-variant": "#4d4635",
+                    "tertiary-container": "#b3b3b0",
+                    "on-secondary-fixed": "#410000",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "32px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-padding-lg": "120px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "body-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+	<link rel="stylesheet" href="../css/global.css"/>
+	<link rel="stylesheet" href="../css/attractions.css"/>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20 shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 w-full max-w-container-max mx-auto">
+<a href="home.html"><div class="font-display-lg text-headline-md text-primary">Roseau</div></a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="home.html">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="rooms.html">Rooms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="spa-wellness.html">Spa</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="dining.html">Dining</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="attractions.html">Attractions</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contact-us.html">Contact</a>
+</nav>
+<a href="book-your-stay.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-label-caps text-label-caps hover:opacity-80 transition-opacity active:scale-95">
+                Book Your Stay
+            </a>
+</div>
+</header>
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<!-- Hero Section -->
+<section class="py-section-padding-lg text-center flex flex-col items-center">
+<span class="font-label-caps text-label-caps text-primary mb-4 tracking-[0.3em]">GATEWAY TO HERITAGE</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 max-w-4xl">
+                Explore the Majesty of Gondar
+            </h1>
+<div class="w-24 h-px bg-primary-container mb-12"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-center leading-relaxed">
+                Known as the "Camelot of Africa," Gondar's landscape is punctuated by imperial fortresses and churches. Just 10 km from Gondar Airport with complimentary shuttle, the hotel is minutes from Fasilida's Bath, the Royal Enclosure, and Debre Berhan Selassie Church.
+            </p>
+</section>
+<!-- Map Section -->
+<section class="mb-section-padding-lg">
+<div class="relative w-full h-[500px] bento-card rounded-xl overflow-hidden border border-outline-variant/30">
+<div class="absolute inset-0 bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover grayscale-[20%] opacity-90" data-location="Gondar, Ethiopia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGNOVRa2P9cDLXGjEyLaXcs9e0gFj36ygS6jC04v4sbKLlzrveyXEj_m2-zhCNlSeHO8JZB9w47FMLUuAw-MQaOsHuw7ipuZnw8S085ZMJNINzgKvDoVLyjIUDdnHKOAL4aT0WMvA1LD4q_ME3t7hbLyM3TdsqBLixP5vpT8OpD5xBCmQH2YtxfvRnqe3SLO9DGM1qUKoydK74q1xug-V6JI28eXgFtJAqFt0lesnQ0dqu-aX5BiulrRAv5qMlXvVKnULUBlrsF2ho"/>
+<!-- Stylized Overlay Elements -->
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<!-- Custom Map Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group">
+<div class="bg-primary text-on-primary p-2 rounded-full shadow-lg border-2 border-white scale-110">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-2 bg-white px-3 py-1 rounded shadow-sm border border-primary/20">
+<span class="font-label-caps text-[10px] text-primary whitespace-nowrap">ROSEAU HOTEL</span>
+</div>
+</div>
+</div>
+<!-- Map UI Controls -->
+<div class="absolute bottom-6 right-6 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white border border-primary/20 shadow-sm flex items-center justify-center text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-10 h-10 bg-white border border-primary/20 shadow-sm flex items-center justify-center text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Attractions Grid (Bento Style) -->
+<section class="mb-section-padding-lg">
+<div class="castle-grid">
+<!-- Main Attraction: Gondar Castle -->
+<div class="col-span-12 md:col-span-8 bento-card border border-primary-container/20 rounded-xl overflow-hidden flex flex-col md:flex-row bg-surface">
+<div class="md:w-1/2 h-80 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A cinematic, low-angle shot of the majestic Fasil Ghebbi stone castle in Gondar, Ethiopia. The late afternoon sunlight casts a warm gold glow over the ancient masonry and battlements. The sky is a soft, cloudless azure, reflecting a peaceful yet regal atmosphere. The image is crisp and editorial, maintaining a minimalist-luxury aesthetic with deep shadows and highlighted stone textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfGTQn-PsMxBRvp_XrgH6J739basWmu5qeK0ZqJrS4okkRrniIStRbRSX76fGhX6xn4Wwv_9jUnUmJneCvnLsI8i6PKRIUaS51EYHirK2Ff1UvDy2iNPVil7hd1Dq7KbA0P5WVPWCj9m-sGtEH5SSIRbJbeqlB5vu_XCqzBm67orf_myodoFjxkbAMOzblfXJtD07FlMmCXznqWp8UhgcqU7CvyXCRtfSRD40j3qzVRp0ekB4_PgPzLaNYKRVOzwkqlHoag28z7MH"/>
+</div>
+<div class="md:w-1/2 p-10 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-label-caps text-primary">UNESCO WORLD HERITAGE</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">directions_walk</span> 1.2 KM
+                            </span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-6">Gondar Castle (Fasil Ghebbi)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                            Established in the 17th century by Emperor Fasilides, this fortress city served as the home of Ethiopia's emperors. Its unique architecture combines Indian, Arabic, and Baroque influences.
+                        </p>
+<button class="self-start font-label-caps text-label-caps text-primary border-b border-primary/40 pb-1 hover:border-primary transition-all">
+                            DISCOVER HISTORY
+                        </button>
+</div>
+</div>
+<!-- Simien Mountains -->
+<div class="col-span-12 md:col-span-4 bento-card border border-primary-container/20 rounded-xl bg-surface p-8 flex flex-col">
+<div class="h-48 rounded-lg overflow-hidden mb-8">
+<img class="w-full h-full object-cover" data-alt="A breathtaking panoramic view of the Simien Mountains in Ethiopia during sunrise. Jagged basalt plateaus and deep valleys are shrouded in misty, soft morning light. The color palette consists of cool blues, earthy greens, and soft gold highlights from the rising sun. The mood is tranquil and awe-inspiring, echoing a high-end travel magazine aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQCAlNl7_uLsZ2ppNQnljlPf5ncxa54WNavpq15hFYsVP6tpVVR2nisAeBROqvxggLtTZXQbWOGv7YLqyuUPGUIUzxNNHbkcVhUW3qQKWRBvkC_ztPAmSi-_rsxs1ti3T1cyDuE69C-_bZm-XTDLKesUMrTSSIFmM1R4a0sZgJuh-GLjHAOJD0YTu4pOvOkT2Pu6Ynp6KKbAXzOS26x1m1XlbWTwEIGk3Oz1jZHLmdlwkyuu2Bhm6vhdf1uQQPXznhZOx1fcAYtUEJ"/>
+</div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Simien Mountains</h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant">120 KM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6">
+                        An awe-inspiring landscape of jagged peaks and deep valleys, home to the rare Gelada baboon and Walia ibex.
+                    </p>
+<div class="mt-auto flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">mountain_flag</span>
+<span class="font-label-caps text-[10px]">GUIDED DAY TOURS</span>
+</div>
+</div>
+<!-- Debre Berhan Selassie -->
+<div class="col-span-12 md:col-span-4 bento-card border border-primary-container/20 rounded-xl bg-surface p-8 flex flex-col">
+<div class="h-48 rounded-lg overflow-hidden mb-8">
+<img class="w-full h-full object-cover" data-alt="The ornate and colorful ceiling of the Debre Berhan Selassie Church in Gondar, featuring hundreds of winged angels with wide eyes. The lighting is soft and candle-like, illuminating the ancient, hand-painted religious art. The aesthetic is educational and reverent, highlighting the rich cultural heritage of Ethiopia with warm ochre and primary colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu1wt4UK9DMvwUqbjrNd9mytLAYT5YvCfVtpKBAnvI90hVylvjQWYVp0M5IA9c8XNXODcMOb_X5sjOTd25IEEZWitA4wzEw-G9biix0W6KhLDD8cRQA5lLUKvRWxJtOJ_OyljZMvMvBu5yIo3QRX3OCaSOLvuchoXMw1-JHk9jxdLmWtf5waGs_esHq_aB1IHgtCTOkzurLk2j7DThEtSw040D-ERdl09kXKqNmhuy4QB4nWqu7V_zbdbeNdOTrDgq6oRO8JZ6v-Tb"/>
+</div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Berhan Selassie</h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant">2.5 KM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        Famous for its ceiling covered in the faces of angels, this 17th-century church is an Ethiopian artistic masterpiece.
+                    </p>
+</div>
+<!-- Kuskuam Palaces -->
+<div class="col-span-12 md:col-span-4 bento-card border border-primary-container/20 rounded-xl bg-surface p-8 flex flex-col">
+<div class="h-48 rounded-lg overflow-hidden mb-8">
+<img class="w-full h-full object-cover" data-alt="Stone ruins of the Kuskuam Palaces in Gondar, Ethiopia, overgrown with subtle green vines. The scene is shot in soft, diffuse daylight, creating a peaceful, contemplative atmosphere. The architectural details of the ancient stones are highlighted against a minimalist, bright-sky background, evoking a sense of timeless luxury and discovery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBtJ9JlL8qGkmhmML8DHGOLeGxBeobpOKzhae0-VeyvUodBxvlKghwG-Mw9Z_fuUTBLt92ZqxRUL4R43DKS6N3gLnX6KhROHXQM32rxMvdXkijMsR4EeyqBPxNhuLxhb01o6Y0BSW06agmLiwy6cuqm3AT4MvuLuEpFabq0VFH_01jXb0MvBcHnwhp6SJmPNjJNrLneLA6V7XlK7SQzJ_V6rBBW00VzcMpejVZSoDoz-r6Pq7INfxT_qaTirAPZalvVi8DU-zEclCK"/>
+</div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Kuskuam Palaces</h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant">3.8 KM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        The imperial residence built by Empress Mentewab, featuring a massive banquet hall and three stone churches.
+                    </p>
+</div>
+<!-- Gorgora -->
+<div class="col-span-12 md:col-span-4 bento-card border border-primary-container/20 rounded-xl bg-surface p-8 flex flex-col">
+<div class="h-48 rounded-lg overflow-hidden mb-8">
+<img class="w-full h-full object-cover" data-alt="The serene shores of Lake Tana at Gorgora, Ethiopia. A small traditional wooden boat rests on the calm, reflective water. The lighting is golden hour, with long shadows and a warm glow across the landscape. The scene is incredibly peaceful, utilizing a palette of deep blues and rich gold accents to convey luxury and tranquility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCChfFiwt8wJ9_739Op62EDuxL0SUKbxDSLeHDsBrHn7mtOpmS2_z-qtNpTTqSwYy6HBzHDrgSO_Lie_D1Tz7j88T5HSZQpC8UfLdYPHAAHj5QxLnttODIYI66Os1JNdKW-2jokIhty4oG9apZn13mccOYsKVkg-0tEo15xLXZEFbUYWly7YhfotVXqWapg6FC_mofGutGXZq7spv4ORAHYuSi70hVMuw2uh4ZtXlmI18c5UBqMzQ3r6OnFAVJI3jC0q3kt8Auo6LnO"/>
+</div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm">Gorgora</h3>
+<span class="font-label-caps text-[10px] text-on-surface-variant">65 KM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        A peaceful lakeside town on Lake Tana, offering monastic ruins and a glimpse into early Jesuit influence in Ethiopia.
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-padding-lg mb-section-padding-lg border-y border-primary/10 flex flex-col items-center bg-surface-container-low/30">
+<h2 class="font-headline-md text-headline-md mb-8 text-center">Your Adventure Begins at Roseau</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-10 text-center max-w-xl">
+                Our complimentary airport shuttle and concierge service can arrange tours to Fasilida's Bath (2.8 km), Gondar Royal Enclosure (2.9 km), Kuskuam Palace, Debre Berhan Selassie Church, Gondar City Centre, local markets, restaurants, and cultural sites.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 font-label-caps text-label-caps shadow-lg hover:opacity-90 transition-all">
+                    SCHEDULE A TOUR
+                </button>
+<button class="border border-primary-container text-primary px-10 py-4 font-label-caps text-label-caps hover:bg-primary-container hover:text-on-primary-container transition-all">
+                    VIEW CONCIERGE SERVICES
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-secondary dark:bg-on-secondary-fixed-variant border-t border-primary/30">
+<div class="flex flex-col md:flex-row justify-between items-start px-gutter py-section-padding-lg w-full max-w-container-max mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="font-display-lg text-headline-sm text-on-secondary mb-4">Roseau</div>
+<p class="font-body-md text-body-md text-on-secondary/80 max-w-xs">
+                    Where the majesty of Gondar meets the luxury of the highlands. A royal retreat since 2024.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-[10px] text-on-secondary/60 tracking-[0.2em] mb-2 uppercase">Links</span>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary hover:underline decoration-primary-container transition-all" href="#">Press Kit</a>
+<a class="font-body-md text-body-md text-primary-fixed hover:text-on-secondary hover:underline decoration-primary-container transition-all" href="admin-dashboard.html">Admin</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-[10px] text-on-secondary/60 tracking-[0.2em] mb-2 uppercase">Navigation</span>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary" href="home.html">Home</a>
+<a class="font-body-md text-body-md text-primary-fixed font-bold" href="attractions.html">Attractions</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-on-secondary" href="rooms.html">Rooms</a>
+</div>
+<div class="col-span-2 md:col-span-1 flex flex-col gap-4">
+<span class="font-label-caps text-[10px] text-on-secondary/60 tracking-[0.2em] mb-2 uppercase">Contact</span>
+<p class="font-body-md text-body-md text-on-secondary/80">info@roseaugondar.com</p>
+<p class="font-body-md text-body-md text-on-secondary/80">+251 (0) 58 111 2233</p>
+</div>
+</div>
+</div>
+<div class="w-full max-w-container-max mx-auto px-gutter py-8 border-t border-on-secondary/10">
+<p class="font-body-md text-[12px] text-on-secondary/60">Â© 2024 Roseau Hotel & Spa. Gondar, Ethiopia.</p>
+</div>
+</footer>
+<script>
+        // Subtle micro-interaction for cards
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const img = card.querySelector('img');
+                if (img) img.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                const img = card.querySelector('img');
+                if (img) img.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize transition styles for images
+        document.querySelectorAll('img').forEach(img => {
+            img.style.transition = 'transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+        });
+    </script>
+</body></html>
